@@ -24,6 +24,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:appcompat-v7:23.1.1'
     compile 'com.android.support:design:23.1.1'
+    compile 'me.zhanghai.android.patternlock:library:2.0.2'
     compile files('libs/encog-core-3.3.0.jar')
     compile files('libs/commons-math3-3.0.jar')
 }

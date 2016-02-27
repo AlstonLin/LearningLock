@@ -16,4 +16,18 @@
         android:text="Unlock"
         android:textAppearance="@android:style/TextAppearance.Large" />
 
+    <me.zhanghai.android.patternlock.PatternView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/editPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="Edit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"/>
+
+
 </RelativeLayout>

@@ -14,6 +14,7 @@ import android.widget.Button;
 public class LockScreenActivity extends Activity implements OnLockStatusChangedListener {
 
     private Button btnUnlock;
+    private Button btnEdit;
     private LockScreenUtil mLockscreenUtil;
 
     @Override
@@ -30,6 +31,16 @@ public class LockScreenActivity extends Activity implements OnLockStatusChangedL
         setContentView(R.layout.activity_lockscreen);
 
         mLockscreenUtil = new LockScreenUtil();
+
+        btnEdit = (Button) findViewById(R.id.editPass);
+        btnEdit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(LockScreenActivity.this, SetPasswordActivity.class);
+                startActivity(i);
+            }
+        });
+
         btnUnlock = (Button) findViewById(R.id.btnUnlock);
         btnUnlock.setOnClickListener(new View.OnClickListener() {
             @Override
